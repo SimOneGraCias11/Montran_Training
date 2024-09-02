@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
+    <%@ page import="bean.Book" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<%
+Book book=(Book)request.getAttribute("book");
+if(book !=null){
+	
+%>
+<h1>ID:<%=book.getId() %></h1>
+<h1>Name:<%= book.getName() %></h1>
+<h1>Author:<%=book.getAuthor() %></h1>
+<h1>No Of Pages:<%=book.getNo_pages() %></h1>
+
+
+<%
+}else{
+%>
+<h1> Book detail not available</h1>
+<%
+}
+%>
+</body>
+</html>

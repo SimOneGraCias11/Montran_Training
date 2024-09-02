@@ -1,0 +1,5 @@
+package springjdbc.spring;
+
+public class Employee {
+
+}

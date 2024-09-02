@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
+    <%@ page import="bean.Book" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<%
+String id=request.getParameter("id");
+
+String name=request.getParameter("name");
+String author=request.getParameter("author");
+String no_pages=request.getParameter("no_pages");
+
+Book book =new Book();
+book.setId(Integer.parseInt(id));
+book.setName(name);
+book.setAuthor(author);
+book.setNo_pages(Integer.parseInt(no_pages));
+
+request.setAttribute("book", book);
+request.getRequestDispatcher("displayBook.jsp").forward(request, response);
+
+
+%>
+
+</body>
+</html>

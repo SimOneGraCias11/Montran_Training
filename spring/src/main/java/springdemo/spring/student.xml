@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+<bean  class="springdemo.spring.Address" id="add">
+<constructor-arg value="Mumbai"/>
+<constructor-arg value="Maharashtra"/>
+<constructor-arg value="India"/>
+
+</bean>
+
+
+<bean class="springdemo.spring.Student" id="p1" autowire="byType">
+<property name= "age" value="21"/>
+<property name= "fname" value="Simone"/>
+<property name= "lname" value="Gracias"/>
+<property name="marks">
+<list>
+<value>67.0</value>
+<value>90.6</value>
+<value>89.6</value>
+</list>
+</property>
+
+<property name="hobbies">
+<set>
+<value> Writing</value>
+<value>Cycling</value>
+<value>Sketching</value>
+</set>
+</property>
+
+<property name="Education">
+<map>
+<entry key="SSC" value="89"/>
+<entry key="HSC" value="89"/>
+
+</map>
+</property>
+<!--<property name="address">
+<ref bean ="add"/>
+</property>-->
+ </bean>
+
+<!--<bean class="springdemo.spring.Student" id="p2" autowire="constructor">
+<property name= "age" value="21"/>
+<property name= "fname" value="Simone"/>
+<property name= "lname" value="Gracias"/>
+
+ </bean>-->
+
+<!--  <bean class="springdemo.spring.Student" id="p2">
+<constructor-arg index ="1" value="Simone"/>
+<constructor-arg index ="0" value="21"/>
+<constructor-arg index ="2" value="Gracias"/>
+
+</bean>-->
+
+<!--<bean class = "springdemo.spring.Student" id="p3">
+<constructor-arg value ="21"/>
+<constructor-arg value ="Simone"/>
+<constructor-arg value ="Gracias"/>
+</bean>-->
+</beans>

@@ -1,0 +1,7 @@
+package springdemo.springassign;
+
+public class Sim {
+
+	String cardNo;
+	
+}

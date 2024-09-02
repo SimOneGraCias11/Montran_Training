@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Student Marksheet</title>
+    <script>
+      function calculate()
+      {
+        
+        var name=document.getElementById('fname').value;
+        var subject1=paseInt(document.getElementById('student1').value);
+        var subject2=paseInt(document.getElementById('student2').value);
+        var subject3=paseInt(document.getElementById('student3').value);
+        var subject4=paseInt(document.getElementById('student4').value);
+        var subject5=paseInt(document.getElementById('student5').value);
+        var subject6=paseInt(document.getElementById('student6').value);
+
+var total =subject1+subject2+subject3+subject4+subject5+subject6;
+var percentage=(total/600)*100;
+
+alert('Student Name: ${name}\n Total Marks: ${total}\nPercentage:${percentage}%');
+  
+      }
+      document.querySelector('button').addEventListener('mouseover',function(){
+    	  this.style.backgroundColor='#3e8e41';
+      });
+      document.querySelector('button').addEventListener('mouseout',function(){
+    	  this.style.backgroundColor='#5cb85c';
+      } );
+    </script>
+  </head>
+  <body>
+    <div class ="marksheet">
+      <h1>Student Marksheet</h1> 
+      
+      <form id= "marksform">
+        
+        <label for="fname">Student Name:</label><br>
+        <input type="text" id= "fname"name="fname"><br><br>
+         <label for="subject1"> English:</label><br>
+        <input type="number" id= "subject1"name="subject1 "><br><br>
+        <label for="subject2"> Maths:</label><br>
+        <input type="number" id= "subject2"name="subject 2"><br><br>
+        <label for="subject3">Science:</label><br>
+        <input type="number" id ="subject3"name="subject 3 "><br><br>
+        <label for="subject4">History:</label><br>
+        <input type="number" id= "subject4"name="subject 4"><br><br>
+        <label for="subject5">Geography:</label><br>
+        <input type="number" id ="subject5"name="subject 5"><br><br>
+        <label for="subject6">Arts:</label><br>
+        <input type="number" id ="subject6"name="subject6"><br><br>
+        
+        <button type="submit" onclick="calculate()">Submit </button>
+          
+        
+        
+      </form>
+      <div id ="result"></div>
+      </div>
+
+      
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <bean  class="springdemo.springassign.Sim" id="jio">
+<property name= "cardNo" value="123ABC21"/>
+</bean>
+
+<bean  class="springdemo.springassign.Sim" id="sim">
+<property name= "cardNo" value="235SET53"/>
+</bean>
+
+<bean  class="springdemo.springassign.Sim" id="Vodafone">
+<property name= "cardNo" value="2351WKQ"/>
+</bean>
+
+    <bean class="springdemo.springassign.Mobile" id="p1" autowire="byType">
+    <property name= "mobile_name" value="Samsung"/>
+<property name= "model" value="Galaxy S22"/>
+ <property name="sim" ref="jio" />
+</bean>
+
+
+    <bean class="springdemo.springassign.Mobile" id="p2" autowire="byName">
+    <property name= "mobile_name" value="iphone"/>
+ <property name= "model" value="iphone 15"/>
+</bean>
+
+
+    <bean class="springdemo.springassign.Mobile" id="p3" autowire="constructor">
+    <constructor-arg ref ="Vodafone"/>
+    <property name= "mobile_name" value="Oppo"/>
+<property name= "model" value="Oppo A78"/>
+</bean>
+
+</beans>

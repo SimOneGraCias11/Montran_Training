@@ -1,0 +1,11 @@
+package springdemo.aspect;
+
+public class country {
+
+	int id;
+	String name;
+	String captial;
+	
+	
+	
+}

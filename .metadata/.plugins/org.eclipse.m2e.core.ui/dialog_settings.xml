@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\Simone Gracias\eclipse-workspace\JSPAssignment"/>
+			<item value="C:\Users\Simone Gracias\eclipse-workspace\spring"/>
+			<item value="C:\Users\Simone Gracias\eclipse-workspace\STUDENT"/>
+			<item value="C:\Users\Simone Gracias\eclipse-workspace\aspect"/>
+			<item value="C:\Users\Simone Gracias\eclipse-workspace\JSPAssignment\src\main\webapp\process.jsp"/>
+			<item value="C:\Users\Simone Gracias\eclipse-workspace\StudentManagementUsingServlet"/>
+			<item value="C:\Users\Simone Gracias\eclipse-workspace\mavenpro"/>
+			<item value="C:\Users\Simone Gracias\eclipse-workspace\HibernateMaven\src\main\java\maven\HibernateMaven"/>
+			<item value="C:\Users\Simone Gracias\eclipse-workspace\Montran_Training"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="InventoryManagement.Project"/>
+			<item value="springMVC.SpringMvc"/>
+			<item value="springJDBC.JDBC_demo"/>
+			<item value="springdemo.demo"/>
+			<item value="springdemo.aspectj"/>
+			<item value="springdemo.springassign"/>
+			<item value="springdemo.aspect"/>
+			<item value="springdemo.spring"/>
+			<item value="assignment12.hybernate"/>
+			<item value="project.OneToOne"/>
+			<item value="montran.mavenpro"/>
+			<item value="maven.HibernateMaven"/>
+		</list>
+		<list key="groupId">
+			<item value="InventoryManagement "/>
+			<item value="springMVC"/>
+			<item value="springJDBC"/>
+			<item value="springdemo"/>
+			<item value="assignment12"/>
+			<item value="project"/>
+			<item value="montran"/>
+			<item value="maven"/>
+		</list>
+		<list key="artifactId">
+			<item value="Project"/>
+			<item value="SpringMvc"/>
+			<item value="JDBC_demo"/>
+			<item value="demo"/>
+			<item value="aspectj"/>
+			<item value="springassign"/>
+			<item value="aspect"/>
+			<item value="spring"/>
+			<item value="hybernate"/>
+			<item value="OneToOne"/>
+			<item value="mavenpro"/>
+			<item value="HibernateMaven"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

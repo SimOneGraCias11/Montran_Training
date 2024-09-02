@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+<struts-config>
+  <form-beans>
+    <form-bean name="userFormBean"
+               type="coreservlets.UserFormBean"/>
+  </form-beans>
+  <action-mappings>
+    <action path="/register1" 
+            type="coreservlets.BeanRegisterAction"
+            name="userFormBean"
+            scope="request">
+      <forward name="bad-address" 
+               path="/WEB-INF/results/bad-address1.jsp"/>
+      <forward name="bad-password" 
+               path="/WEB-INF/results/bad-password1.jsp"/>
+      <forward name="success" 
+               path="/WEB-INF/results/confirm-registration1.jsp"/>
+    </action>
+  </action-mappings>
+</struts-config>
+

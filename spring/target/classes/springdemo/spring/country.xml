@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+<bean class="springdemo.spring.country" id="p1" >
+<property name= "id" value="21"/>
+<property name= "name" value="UK"/>
+<property name= "capital" value="london"/>
+<property name="states">
+
+<list>
+<value>Hawaii</value>
+<value>Maharashtra</value>
+<value>California</value>
+</list>
+</property>
+
+<property name="President">
+<map>
+<entry key="APJ" value="2015"/>
+<entry key="Joe Biden" value="2021"/>
+
+</map>
+</property>
+</bean>
+</beans>

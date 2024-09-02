@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:LoginProject" serverId="apache-tomcat-9.0.71 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:StudentManagementUsingServlet" serverId="apache-tomcat-9.0.71 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:ServletWebProject" serverId="apache-tomcat-9.0.71 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Q2" serverId="apache-tomcat-9.0.71 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:SessionTracking" serverId="apache-tomcat-9.0.71 at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:Project" serverId="apache-tomcat-9.0.71 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Q3" serverId="apache-tomcat-9.0.71 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:JSPAssignment" serverId="apache-tomcat-9.0.71 at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:SpringMvc" serverId="apache-tomcat-9.0.71 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:InventoryManagement" serverId="apache-tomcat-9.0.71 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Q1" serverId="apache-tomcat-9.0.71 at localhost"/>
+</modules>

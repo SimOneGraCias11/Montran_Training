@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Employee Salary calculator</title>
+
+<style >
+body{
+	font-family:Arial,sans-serif;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+	background-color:#f0f0f0;
+	margin:0;
+}
+
+.container{
+	background-color:#fff;
+	padding:20px;
+	border-radius:10px;
+	box-shadow:0 0 10px rgba(0,0,0,0.1);
+	width:300px;
+}
+
+h1{
+	text-align:center;
+	color:#333;
+}
+
+form{
+	display:flex;
+	flex-direction:column;
+}
+label{
+	margin-top:10px;
+	display:block;
+	color:#555;
+}
+
+input{
+	padding:5px;
+	margin-top:5px;
+}
+
+button{
+	margin-top:20px;
+	padding:10px;
+	background-color:#007bff;
+	color:#fff;
+	border:none;
+	border-radius:5px;
+	cursor:pointer;
+	
+}
+
+button:hover{
+	background-color:#0056b3;
+}
+#grade{
+	display:flex;
+	justify-content:space-around;
+	margin-top:5px;
+}
+
+input[read-only]{
+	background-color:red;
+} 
+
+
+</style>
+</head>
+
+
+<body>
+	<div class="container">
+		<h1>Employee Salary Calculator</h1>
+
+		<form id="salaryform" onsubmit="return false;">
+
+			<label for="empname">Employee Name:</label><br> 
+			
+			<input type="text" id="empname" name="empname"><br> <br>
+			
+			 <label for="salary">Salary:</label><br> <input type="number" id="salary" name="salary "><br> <br>
+				 <label for="grade"> Grade:</label><br>
+			<div id="grade">
+				<input type="radio" id="gradeA" name="grade" value="A"> <label
+					for="gradeA">A</label> <input type="radio" id="gradeB" name="grade"
+					value="B"> <label for="gradeB">B</label> <input
+					type="radio" id="gradeC" name="grade" value="C"> <label
+					for="gradeC">C</label>
+			</div> 
+			<br> <br> <label for="bonus">Bonus:</label><br> 
+			<input type="text" id="bonus" name="bonus " readonly><br> <br>
+			<label for="pf">Pf:</label><br>
+			 <input type="text" id="pf"name="pf" readonly><br> <br>
+			  <label for="hra">HRA:</label><br>
+			<input type="text" id="hra" name="hra" readonly><br> <br>
+			<label for="totalsalary">Total Salary:</label><br>
+			 <input type="text" id="totalsalary" name="totalsalary" readonly><br>
+			<br>
+
+			<button type="submit" onclick="calculate()">Calculate Salary</button>
+		</form>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

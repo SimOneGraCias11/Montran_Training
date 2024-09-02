@@ -1,0 +1,14 @@
+package springjdbc.spring;
+
+import org.springframework.context.*;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class demo {
+
+	public static void main(String[] args) {
+		ApplicationContext ctx=new ClassPathXmlApplicationContext("springjdbc/spring/employee.xml");
+		Edao e=(Edao) ctx.getBean("Edao");
+		
+	}
+	
+}

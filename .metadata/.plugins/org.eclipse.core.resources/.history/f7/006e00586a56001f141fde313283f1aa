@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Image Hover</title>
+
+<style>
+
+body{
+font-family:Arial,sans-serif;
+background-color:#f4f4f4;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+
+}
+
+.image-container{
+text-align:center;
+
+}
+
+img{
+width:300px;
+height:300px;
+border:2px solid #333;
+}
+</style>
+
+</head>
+<body>
+
+<div class ="image-container">
+<h1> Hover over image to change it</h1>
+<img id="myImage" src="img.jpg" alt="image"
+onmouseover="changeimg()"
+onmmouseout="revertImg()"
+onclick="changeimgclick()"> 
+
+<h1>Click on the image</h1>
+
+</div>
+
+<script>
+let isClicked =false;
+
+function changeimg(){
+	if(!isClicked){
+	document.getElementById('myImage').src='image2.jpg';
+}
+}
+
+function revertImg(){
+	if(!isClicked){
+	document.getElementById('myImage').src='image1.jpg';
+}
+}
+
+function changeimgclick(){
+	isClicked =true;
+	document.getElementById('myImage').src='image3.jpg';
+}
+
+</script>
+</body>
+</html> 

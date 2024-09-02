@@ -1,0 +1,17 @@
+INDEX VERSION 1.132
+C:\Users\Simone Gracias\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1185353194.index
+\SpringMvc\src\main\resources
+C:\Users\Simone Gracias\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2152000891.index
+\SpringMvc\src\main\java
+C:\Users\Simone Gracias\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3596167684.index
+\InventoryManagement\InventoryManagement\src\main\java
+C:\Users\Simone Gracias\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3622161867.index
+\mavenpro\src\main\java
+C:\Users\Simone Gracias\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3464753390.index
+\JSPAssignment\src\main\java
+C:\Users\Simone Gracias\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\41899049.index
+\SpringMvc\src\main\java
+C:\Users\Simone Gracias\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4114514053.index
+\Project\src\main\resources
+C:\Users\Simone Gracias\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3448239715.index
+\InventoryManagement\src\main\java

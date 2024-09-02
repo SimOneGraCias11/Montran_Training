@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate mapping DTD//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+	<hibernate-mapping>
+	<class name="montran.mavenpro.Student" table="Stud">
+	<id name="id" type="int" column="id">
+	<generator class="increment"></generator></id>
+	<property name ="name" column="name" type="string"></property>
+	<property name="course" column ="course" type="string"></property>
+	<property name="joinDate" column ="joinDate" type="date"></property>
+	<property name="fees" column ="fees" type="double"></property>
+	<property name="paid" column ="paid" type="double"></property>
+	<property name="due" column ="due" type="double"></property>
+	<property name="address" column ="address" type="string"></property>
+	<property name="contactNo" column ="contactNo" type="string"></property>
+	
+	</class>
+	</hibernate-mapping>
+	

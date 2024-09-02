@@ -1,0 +1,24 @@
+package springdemo.aspect;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.*;
+
+@Aspect
+public class PaymentAspect {
+	@Before("execution(*.springdemo.aspect.payment.doPayment(..))")
+	public void beforePay(JoinPoint joinPoint) {
+	System.out.println("Before payment" +joinPoint.getSignature().getName());	
+	
+	}
+	@After("execution(*.springdemo.aspect.payment.doPayment(..))")
+	public void afterPay(JoinPoint joinPoint) {
+	System.out.println("After payment" +joinPoint.getSignature().getName());	
+	
+	}
+	@AfterReturning(pointcut="execution(*.springdemo.aspect.payment.doPayment(..))",returning="result")
+	public void afterReturnPay(JoinPoint joinPoint,int result) {
+	System.out.println(" After payment" +joinPoint.getSignature());	
+	 System.out.println("Payment result " + result );
+	}
+
+}

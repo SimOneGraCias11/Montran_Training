@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate mapping DTD//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+	<hibernate-mapping>
+	<class name="maven.HibernateMaven.Customer" table="Cust">
+	<id name="id" type="int" column="id">
+	<generator class="increment"></generator></id>
+	<property name ="name" column="name" type="string"></property>
+	<property name="city" column ="city" type="string"></property>
+	<property name="Dop" column ="Dop" type="date"></property>
+	
+	</class>
+	</hibernate-mapping>
+	

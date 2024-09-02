@@ -1,0 +1,22 @@
+package springmvc;
+
+import javax.servlet.http.HttpServlet;
+
+import org.springframework.web.servlet.*;
+
+public class addController {
+
+	public ModelAndView add(HttpServlet request, HttpServlet response) {
+		
+		int n1=Integer.parseInt(request.getInitParameter("n1"));
+		int n2=Integer.parseInt(request.getInitParameter("n2"));
+		
+		int result=n1+n2;
+		
+		ModelAndView mv=new ModelAndView();
+		mv.setViewName("Result.jsp");
+		mv.addObject("result",result);
+		return null;
+	}
+	
+}
